@@ -1,2 +1,2 @@
-# Payment_-Gateway_-Integration
+# Payment-Gateway-Integration
 A payment gateway integrated website.
