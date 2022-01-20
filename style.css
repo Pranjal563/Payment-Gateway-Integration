@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Murecho', sans-serif;
+}
+
+hr{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 70vw;
+    margin-left: 190px;
+}
+
+@media(max-width: 300px){
+    hr{
+        width: 80px;
+        margin-left: 30px;
+    }
+}
+@media(max-width: 700px){
+    hr{
+        width: 180px;
+        margin-left: 110px;
+    }
+}
+@media(max-width: 850px){
+    hr{
+        width: 350px;
+        margin-left: 180px;
+    }
+}
+
+/* Navigation-Bar */
+
+.navbar{
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 90px;
+    width: 108px;
+    margin: 22px 22px 5px 22px;
+    border-radius: 13px;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 20px;
+    position: relative;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navlinks ul li:hover{
+    background: rgb(238, 114, 56);
+    transition: 0.6s ease;
+    border: 1px solid rgb(238, 114, 56);
+    border-radius: 10px;
+}
+
+.navlinks ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+}
+
+.navbar h3{
+    background: #f1ee15;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    font-weight:bold;
+    color: rgb(5, 119, 5);
+}
+
+.navbar h5{
+    color: white;
+    text-align: center;
+    margin: 12px;
+    padding-bottom: 25px;
+    padding-top: 12px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+@media(max-width: 700px){
+    .logo{
+        height: 45px;
+        width: 54px;
+    }
+    .navbar h3{
+        font-size: 12px;
+    }
+    .navbar h5{
+        font-size: 9px;
+    }
+    .navlinks ul li a{
+        font-size: 8px ;
+    }
+}
+@media(max-width: 300px){
+    .logo{
+        height: 15px;
+        width: 18px;
+    }
+    .navbar h3{
+        font-size: 8px;
+    }
+    .navbar h5{
+        font-size: 5px;
+    }
+    .navlinks ul li a{
+        font-size: 5px ;
+    }
+}
+
+
+/* Main-Content */
+
+.main{
+   height: 560px;
+   width: 98vw;
+   display: flex;
+   margin-left: -10px;
+   margin-top: 80px;
+   position: relative;
+}
+
+.main-images{
+    background-color: rgb(243, 232, 232);
+    margin-right: 30px;
+    margin-left: 35px;
+    padding-left: 10px;
+    border-radius: 15px;
+    transition: 0.6s ease;
+    height: 550px;
+}
+
+.main-images:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+.donate-btns{
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    padding: 10px 30px 10px 30px;
+    font-size: 17px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid black;
+    background: rgb(30, 117, 63);
+    cursor: pointer;
+
+}
+
+.donate-btns:hover{
+    background: rgb(80, 155, 109);
+    transition: 0.4s ease;
+}
+
+.main-images button a{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.main-images img{
+    height: 240px;
+    width: 330px;
+    margin-top: 18px;
+    margin-right: 18px;
+    padding-left: 6px;
+    border-radius: 15px;
+}
+
+.main-images p{
+    font-size: 17px;
+    margin-top: 12px;
+    margin-left: 12px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight:450;
+}
+
+@media(max-width:700px){
+    .main{
+        flex-direction: column;
+    }
+}
+
+/* About */
+
+.about-box{
+    display: flex;
+    margin: 50px 0;
+    justify-content: center;
+    align-items: center;
+    background: rgb(84, 224, 178);
+    width: 80vw;
+    margin-left: 120px;
+    border-radius: 12px;
+}
+
+.about-box:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
+
+.about-box img{
+    height: 240px;
+    width: 330px;
+    margin-top: 18px;
+    margin-right: 18px;
+    padding-left: 6px;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.about-box p{
+    font-size: 17px;
+    margin-top: 12px;
+    margin-left: 100px;
+    margin-right: 100px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight:450;
+}
+
+
+
+/* Donate line and Donate button */
+
+.donate-lines{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+.donate-btn{
+    border: 1px solid black;
+    background: rgb(230, 78, 8);
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 15px;
+    letter-spacing: 1px;
+}
+
+.donate-btn:hover{
+    background: rgb(208, 241, 58);
+    border: 1.5px solid rgb(228, 128, 82);
+    transition: 0.5s ease;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+/* Contact */
+
+
+.contact-box{
+    background: rgb(236, 86, 48);
+    color: black;
+    height: 250px;
+}
+
+.contact-box p{
+    font-size: 19px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.contact-info{
+    background: rgb(236, 86, 48);
+    margin-top: 20px;
+}
+
+.contact-info p{
+    padding-bottom: 18px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+
+}
+
+.contact-info p a{
+    text-decoration: none;
+    color: rgb(30, 90, 25);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.sparks-foundation{
+    text-align: center;
+}
+
+.sparks-foundation a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.social-links{
+    background: rgb(236, 86, 48);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.social-links .links{
+    padding: 15px 0;
+}
+
+.social-links .links a{
+    padding: 0 14px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.social-links .links span{
+    padding-left: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer */
+
+.footer{
+    color: white;
+    background: black;
+}
+
+.footer p{
+    margin-left: 60px;
+    text-align: center;
+    padding: 16px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer p a{
+    color: rgb(24, 85, 24);
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    border: 1px solid green;
+    background: white;
+    padding: 10px 20px 10px 20px;
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+.footer p a:hover{
+    background: rgb(236, 86, 48);
+    transition: 0.4s ease;
+}
